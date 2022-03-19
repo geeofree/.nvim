@@ -31,6 +31,10 @@ Plug 'airblade/vim-gitgutter'
 " File Explorer
 Plug 'justinmk/vim-dirvish'
 Plug 'roginfarrer/vim-dirvish-dovish', {'branch': 'main'}
+
+" Line Commenting
+Plug 'tpope/vim-commentary'
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 call plug#end()
 
 lua << EOF
