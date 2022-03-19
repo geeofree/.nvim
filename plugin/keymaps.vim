@@ -10,3 +10,4 @@ nnoremap <leader>/ :set hlsearch!<cr>
 nnoremap <leader>w :write<cr>
 nnoremap <leader>q :bdelete<cr>
 nnoremap <leader>e :write<cr><bar>:bdelete<cr>
+nnoremap <leader>g :Git<cr>

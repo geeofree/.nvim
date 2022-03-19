@@ -23,6 +23,10 @@ Plug 'mattn/emmet-vim'
 
 " Devicons
 Plug 'kyazdani42/nvim-web-devicons'
+
+" Git Integration
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 lua << EOF
