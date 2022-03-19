@@ -1,5 +1,8 @@
 call plug#begin()
+" Theme
 Plug 'navarasu/onedark.nvim'
+
+" LSP + Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
@@ -10,8 +13,13 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
+
+" Fuzzy Finder
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+" Emmet
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 lua << EOF
