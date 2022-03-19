@@ -20,10 +20,15 @@ Plug 'nvim-telescope/telescope.nvim'
 
 " Emmet
 Plug 'mattn/emmet-vim'
+
+" Devicons
+Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
 lua << EOF
 require("treesitter_config")
 require("lsp_installer_config")
 require("cmp_config")
+require("telescope_config")
+require("devicons_config")
 EOF

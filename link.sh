@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 mkdir -p ~/.config/nvim/plugin
 mkdir -p ~/.config/nvim/lua
