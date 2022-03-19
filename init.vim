@@ -38,10 +38,10 @@ Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 call plug#end()
 
 lua << EOF
-require("treesitter_config")
-require("lsp_installer_config")
-require("cmp_config")
-require("telescope_config")
-require("devicons_config")
+require("configs.treesitter")
+require("configs.lsp-installer")
+require("configs.cmp")
+require("configs.telescope")
+require("configs.devicons")
 require('gitsigns').setup()
 EOF
