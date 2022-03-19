@@ -27,6 +27,10 @@ Plug 'kyazdani42/nvim-web-devicons'
 " Git Integration
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+
+" File Explorer
+Plug 'justinmk/vim-dirvish'
+Plug 'roginfarrer/vim-dirvish-dovish', {'branch': 'main'}
 call plug#end()
 
 lua << EOF

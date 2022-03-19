@@ -5,7 +5,6 @@ nnoremap <leader>s <cmd>Telescope live_grep<cr>
 nnoremap <leader>[ :bprev<cr>
 nnoremap <leader>] :bnext<cr>
 nnoremap <leader>o <cmd>Telescope buffers<cr>
-nnoremap <leader>- :Ex<cr>
 nnoremap <leader>/ :set hlsearch!<cr>
 nnoremap <leader>w :write<cr>
 nnoremap <leader>q :bdelete<cr>
