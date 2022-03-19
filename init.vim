@@ -26,7 +26,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 " Git Integration
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+Plug 'lewis6991/gitsigns.nvim'
 
 " File Explorer
 Plug 'justinmk/vim-dirvish'
@@ -43,4 +43,5 @@ require("lsp_installer_config")
 require("cmp_config")
 require("telescope_config")
 require("devicons_config")
+require('gitsigns').setup()
 EOF
