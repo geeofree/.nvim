@@ -15,7 +15,7 @@ nnoremap <leader>q :bdelete<cr>
 nnoremap <leader>e :write<cr><bar>:bdelete<cr>
 
 " Git
-nnoremap <leader>g :G<cr>
+nnoremap <leader>gg :G<cr>
 nnoremap <leader>gc :G cm<cr>
 nnoremap <leader>gd :Gdiffsplit<cr>
 nnoremap <leader>gp :Gitsigns preview_hunk<cr>
