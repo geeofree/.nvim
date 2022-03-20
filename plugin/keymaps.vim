@@ -17,6 +17,6 @@ nnoremap <leader>e :write<cr><bar>:bdelete<cr>
 nnoremap <leader>g :G<cr>
 nnoremap <leader>gc :G cm<cr>
 nnoremap <leader>gd :Gdiffsplit<cr>
-nnoremap <leader>gp :Gitsigns preview_hunk<cr>
+nnoremap <leader>gph :Gitsigns preview_hunk<cr>
 nnoremap [c :Gitsigns prev_hunk<cr>
 nnoremap ]c :Gitsigns next_hunk<cr>
