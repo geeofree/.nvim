@@ -1,6 +1,6 @@
 function JsAbbreviations()
-	iabbrev fn& <esc>bciwfunction<C-o>p() {<cr>}<C-o>O
-	iabbrev im& <esc>bciwimport<C-o>p from '<C-o>p'<esc>BBB
+	iabbrev fn& function () {<cr>}<esc>kf(i
+	iabbrev im& import module from 'module'<esc>^:.,$s/module//g<left><left>
 endfunction
 
 autocmd FileType javascript,typescript call JsAbbreviations()
