@@ -13,3 +13,4 @@ set updatetime=50
 set nowrap
 set completeopt=menuone,preview,noinsert,noselect
 set timeoutlen=300
+set splitbelow
