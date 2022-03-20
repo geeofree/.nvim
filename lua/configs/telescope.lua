@@ -16,6 +16,9 @@ require('telescope').setup{
 		find_files = {
 			previewer = false,
 		},
+		buffer = {
+			previewer = false,
+		},
   },
 	extensions = {},
 }
