@@ -16,9 +16,7 @@ require('telescope').setup{
 		find_files = {
 			previewer = false,
 		},
-		live_grep = {
-			previewer = false,
-		},
   },
 	extensions = {},
 }
+require('telescope').load_extension('fzf')

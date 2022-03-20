@@ -1,16 +1,16 @@
 local lsp_installer = require("nvim-lsp-installer")
-local lsp_config_util = require("lspconfig/util")
 
 -- Include the servers you want to have installed by default below
 local servers = {
 	'tsserver',
-	'cssls', 
-	'cssmodules_ls', 
-	'html', 
-	'jsonls', 
-	'tailwindcss', 
+	'cssls',
+	'cssmodules_ls',
+	'html',
+	'jsonls',
+	'tailwindcss',
 	'vimls',
 	'bashls',
+	'sumneko_lua',
 }
 
 for _, name in pairs(servers) do
