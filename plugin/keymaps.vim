@@ -5,7 +5,6 @@ nnoremap <leader>p <cmd>Telescope find_files<cr>
 nnoremap <leader>s <cmd>Telescope live_grep<cr>
 nnoremap <leader>gs <cmd>Telescope git_status<cr>
 nnoremap <leader>u <cmd>Telescope buffers<cr>
-nnoremap <leader>/ :noh<cr>
 
 " Buffer
 nnoremap <leader>[ :bprev<cr>
