@@ -23,3 +23,14 @@ require('telescope').setup{
 	extensions = {},
 }
 require('telescope').load_extension('fzf')
+
+local M = {}
+
+M.search_nvim = function()
+	require("telescope.builtin").find_files({
+		prompt_title = ".nvim",
+		cwd = "$pr/.nvim",
+	})
+end
+
+return M

@@ -6,6 +6,7 @@ nnoremap <leader>fs <cmd>Telescope live_grep<cr>
 nnoremap <leader>fw <cmd>Telescope grep_string<cr>
 nnoremap <leader>fg <cmd>Telescope git_status<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>en <cmd>lua require('configs.telescope').search_nvim()<cr>
 
 " Buffer
 nnoremap <leader>[ :bprev<cr>
