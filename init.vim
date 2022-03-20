@@ -37,6 +37,8 @@ Plug 'tpope/vim-commentary'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 call plug#end()
 
+colorscheme onedark
+
 lua << EOF
 require("configs.treesitter")
 require("configs.lsp-installer")
