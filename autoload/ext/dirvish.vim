@@ -1,5 +1,5 @@
 function! ext#dirvish#CreateFile()
-	let l:cwd = expand('%')
+	let l:cwd = expand('%:h') . '/'
 	let l:filepath = input(cwd)
 
 	if trim(filepath) == ''
