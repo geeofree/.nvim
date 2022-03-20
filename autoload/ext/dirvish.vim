@@ -2,7 +2,7 @@ function! ext#dirvish#CreateFile()
 	let l:cwd = expand('%:h') . '/'
 	let l:filepath = input(cwd)
 
-	if trim(filepath) == ''
+	if empty(filepath)
 		return
 	endif
 
@@ -12,8 +12,9 @@ function! ext#dirvish#CreateFile()
 	let l:file = fnamemodify(filepath, ':t')
 
 	if empty(file) != 1
-		execute(":silent !touch " . shellescape(filepath))
+		execute(":silent !touch " . shellescape(cwd . filepath))
 	endif
 
 	execute("Dirvish " . fnameescape(cwd . directory))
+	execute("norm /" . fnameescape(file) . "\<cr>")
 endfunction
