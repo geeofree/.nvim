@@ -1,6 +1,8 @@
 call plug#begin()
 " Theme
 Plug 'navarasu/onedark.nvim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Intellisense
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
