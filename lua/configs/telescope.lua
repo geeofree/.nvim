@@ -3,10 +3,10 @@ require('telescope').setup{
 		path_display = {'smart'},
 		mappings = {
 			i = {
-				["<m-k>"] = require('telescope.actions').move_selection_previous,
-				["<m-j>"] = require('telescope.actions').move_selection_next,
+				["<c-k>"] = require('telescope.actions').move_selection_previous,
+				["<c-j>"] = require('telescope.actions').move_selection_next,
 				["<esc>"] = require('telescope.actions').close,
-				["<m-n>"] = function()
+				["<c-n>"] = function()
 					vim.cmd("stopinsert")
 				end,
 			}
