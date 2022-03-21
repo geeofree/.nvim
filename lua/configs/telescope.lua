@@ -1,6 +1,5 @@
 require('telescope').setup{
 	defaults = {
-		path_display = { shorten = 5 },
 		mappings = {
 			i = {
 				["<c-k>"] = require('telescope.actions').move_selection_previous,
@@ -30,6 +29,13 @@ M.search_nvim = function()
 	require("telescope.builtin").find_files({
 		prompt_title = ".nvim",
 		cwd = "$pr/.nvim",
+	})
+end
+
+M.search_notes = function()
+	require("telescope.builtin").find_files({
+		prompt_title = "Notes",
+		cwd = "/tmp/notes",
 	})
 end
 
