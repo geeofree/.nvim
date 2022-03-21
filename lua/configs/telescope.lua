@@ -1,6 +1,6 @@
 require('telescope').setup{
 	defaults = {
-		path_display = {'smart'},
+		path_display = { shorten = 5 },
 		mappings = {
 			i = {
 				["<c-k>"] = require('telescope.actions').move_selection_previous,
