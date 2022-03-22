@@ -19,7 +19,7 @@ nnoremap <leader>e :write<cr><bar>:bdelete<cr>
 " Git
 nnoremap <leader>gg :G<cr>
 nnoremap <leader>gc :G cm<cr>
-nnoremap <leader>gd :Gdiffsplit<cr>
+nnoremap <leader>gd :Gvdiffsplit<cr>
 nnoremap <leader>gph :Gitsigns preview_hunk<cr>
 nnoremap [c :Gitsigns prev_hunk<cr>
 nnoremap ]c :Gitsigns next_hunk<cr>
