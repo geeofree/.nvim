@@ -35,6 +35,7 @@ Plug 'lewis6991/gitsigns.nvim'
 " File Explorer
 Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
+Plug 'roginfarrer/vim-dirvish-dovish', {'branch': 'main'}
 
 " Line Commenting
 Plug 'tpope/vim-commentary'
