@@ -15,7 +15,7 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
-Plug 'ray-x/lsp_signature.nvim'
+Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
 
 " Fuzzy Finder
 Plug 'nvim-lua/plenary.nvim'

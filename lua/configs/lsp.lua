@@ -28,8 +28,6 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 -- after the language server attaches to the current buffer
 local keyopts = { noremap=true, silent=true }
 local on_attach = function(_, bufnr)
-	require "lsp_signature".on_attach()
-
 	-- Mappings.
 	-- See `:help vim.lsp.*` for documentation on any of the below functions
 	vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', keyopts)
