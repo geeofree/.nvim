@@ -8,6 +8,7 @@ nnoremap <leader>fg <cmd>Telescope git_status<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>ev <cmd>lua require('configs.telescope').search_nvim()<cr>
 nnoremap <leader>en <cmd>lua require('configs.telescope').search_notes()<cr>
+nnoremap <leader>ed <cmd>lua require('configs.telescope').search_dotfiles()<cr>
 nnoremap <leader>fs :lua require('telescope.builtin').grep_string { search = vim.fn.input("Search For: ") }<CR>
 
 " Buffer
