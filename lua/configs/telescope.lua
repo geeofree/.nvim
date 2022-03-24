@@ -9,14 +9,35 @@ require('telescope').setup{
 					vim.cmd("stopinsert")
 				end,
 			}
-		}
+		},
+		vimgrep_arguments = {
+			"rg",
+			"--color=never",
+			"--no-heading",
+			"--with-filename",
+			"--line-number",
+			"--column",
+			"--smart-case",
+			"--trim"
+		},
 	},
   pickers = {
 		find_files = {
 			previewer = false,
+			theme = "dropdown",
+		},
+		grep_string = {
+			theme = "ivy",
+		},
+		live_grep = {
+			theme = "ivy",
+		},
+		git_status = {
+			theme = "ivy",
 		},
 		buffer = {
 			previewer = false,
+			theme = "dropdown",
 		},
   },
 	extensions = {},
