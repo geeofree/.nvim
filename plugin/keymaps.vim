@@ -25,3 +25,7 @@ nnoremap <leader>gd :Gvdiffsplit<cr>
 nnoremap <leader>gph :Gitsigns preview_hunk<cr>
 nnoremap [c :Gitsigns prev_hunk<cr>
 nnoremap ]c :Gitsigns next_hunk<cr>
+
+" Quickfix
+nnoremap <leader>, :cnext<cr>
+nnoremap <leader>. :cprevious<cr>
