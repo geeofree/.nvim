@@ -9,13 +9,13 @@ ls.config.set_config({
 
 ls.snippets = {
 	javascript = {
-		ls.parser.parse_snippet("fn", "function $1 ($2) {\n\t$3\n}"),
-		ls.parser.parse_snippet("afn", "async function $1 ($2) {\n\t$3\n}"),
+		ls.parser.parse_snippet("fn", "function $1($2) {\n\t$3\n}"),
+		ls.parser.parse_snippet("afn", "async function $1($2) {\n\t$3\n}"),
 		ls.parser.parse_snippet("im", "import $1 from '$2'"),
 	},
 	typescript = {
-		ls.parser.parse_snippet("fn", "function $1 ($2)$3 {\n\t$4\n}"),
-		ls.parser.parse_snippet("afn", "async function $1 ($2)$3 {\n\t$4\n}"),
+		ls.parser.parse_snippet("fn", "function $1($2)$3 {\n\t$4\n}"),
+		ls.parser.parse_snippet("afn", "async function $1($2)$3 {\n\t$4\n}"),
 		ls.parser.parse_snippet("im", "import $1 from '$2'"),
 	},
 }
