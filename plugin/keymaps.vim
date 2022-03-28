@@ -28,5 +28,5 @@ nnoremap [c :Gitsigns prev_hunk<cr>
 nnoremap ]c :Gitsigns next_hunk<cr>
 
 " Quickfix
-nnoremap <leader>, :cnext<cr>
-nnoremap <leader>. :cprevious<cr>
+nnoremap <leader>, :cprevious<cr>
+nnoremap <leader>. :cnext<cr>
