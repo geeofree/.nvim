@@ -16,6 +16,7 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'ray-x/lsp_signature.nvim'
+Plug 'svermeulen/vimpeccable'
 
 " Fuzzy Finder
 Plug 'nvim-lua/plenary.nvim'
@@ -48,6 +49,7 @@ lua << EOF
 require("configs.treesitter")
 require("configs.lsp")
 require("configs.cmp")
+require("configs.luasnip")
 require("configs.telescope")
 require("configs.devicons")
 require('gitsigns').setup()
