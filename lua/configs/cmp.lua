@@ -13,6 +13,7 @@ cmp.setup({
 		['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
 		['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
 		['<CR>'] = cmp.config.disable,
+		['<TAB>'] = cmp.config.disable,
 		['<C-o>'] = cmp.mapping.confirm({ select = true }),
 		['<C-j>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
 		['<C-k>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
