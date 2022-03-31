@@ -1,9 +1,9 @@
 call plug#begin()
 " Theme
 Plug 'navarasu/onedark.nvim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-lualine/lualine.nvim'
 Plug 'akinsho/bufferline.nvim'
+Plug 'karb94/neoscroll.nvim'
 
 " Intellisense
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -53,6 +53,8 @@ require("configs.cmp")
 require("configs.luasnip")
 require("configs.telescope")
 require("configs.devicons")
-require("configs.bufferline")
+require("bufferline").setup{}
+require('neoscroll').setup()
+require('lualine').setup()
 require('gitsigns').setup()
 EOF

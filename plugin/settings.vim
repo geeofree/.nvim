@@ -14,3 +14,4 @@ set nowrap
 set completeopt=menuone,preview,noinsert,noselect
 set timeoutlen=300
 set splitbelow
+set scrolloff=8
