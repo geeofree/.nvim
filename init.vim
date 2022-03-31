@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'navarasu/onedark.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'akinsho/bufferline.nvim'
 
 " Intellisense
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -52,5 +53,6 @@ require("configs.cmp")
 require("configs.luasnip")
 require("configs.telescope")
 require("configs.devicons")
+require("configs.bufferline")
 require('gitsigns').setup()
 EOF
