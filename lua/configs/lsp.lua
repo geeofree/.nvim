@@ -11,6 +11,8 @@ local servers = {
 	'vimls',
 	'bashls',
 	'sumneko_lua',
+	'rust_analyzer',
+	'taplo',
 }
 
 for _, name in pairs(servers) do
