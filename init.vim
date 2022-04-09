@@ -53,8 +53,8 @@ require("configs.cmp")
 require("configs.luasnip")
 require("configs.telescope")
 require("configs.devicons")
+require("configs.lualine")
 require("bufferline").setup{}
 require('neoscroll').setup()
-require('lualine').setup()
 require('gitsigns').setup()
 EOF
