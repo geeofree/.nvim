@@ -16,6 +16,7 @@ nnoremap <leader>[ :bprev<cr>
 nnoremap <leader>] :bnext<cr>
 nnoremap <leader>w :write<cr>
 nnoremap <leader>q :bdelete<cr>
+nnoremap <leader>qq :bdelete!<cr>
 nnoremap <leader>e :write<cr><bar>:bdelete<cr>
 
 " Git
@@ -30,3 +31,7 @@ nnoremap ]c :Gitsigns next_hunk<cr>
 " Quickfix
 nnoremap <leader>, :cprevious<cr>
 nnoremap <leader>. :cnext<cr>
+
+" Terminal Emulator
+tnoremap <Esc> <C-\><C-n>
+nnoremap <leader>t :split<cr>:te<cr>
