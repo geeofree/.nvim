@@ -40,7 +40,7 @@ Plug 'kristijanhusak/vim-dirvish-git'
 Plug 'roginfarrer/vim-dirvish-dovish', {'branch': 'main'}
 
 " Line Commenting
-Plug 'tpope/vim-commentary'
+Plug 'numToStr/Comment.nvim'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 call plug#end()
 
@@ -54,6 +54,7 @@ require("configs.luasnip")
 require("configs.telescope")
 require("configs.devicons")
 require("configs.lualine")
+require("configs.comment")
 require("bufferline").setup{}
 require('neoscroll').setup()
 require('gitsigns').setup()
