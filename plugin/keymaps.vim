@@ -18,11 +18,13 @@ nnoremap <leader>w :write<cr>
 nnoremap <leader>q :bdelete<cr>
 nnoremap <leader>qq :bdelete!<cr>
 nnoremap <leader>e :write<cr><bar>:bdelete<cr>
+nnoremap <leader>cd :lcd %:p:h<cr>
 
 " Git
 nnoremap <leader>gg :G<cr>
 nnoremap <leader>gc :G cm<cr>
 nnoremap <leader>gl :G log<cr>
+nnoremap <leader>gp :G ps<cr>
 nnoremap <leader>gd :Gvdiffsplit<cr>
 nnoremap <leader>gph :Gitsigns preview_hunk<cr>
 nnoremap [c :Gitsigns prev_hunk<cr>
