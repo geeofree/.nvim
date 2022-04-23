@@ -45,6 +45,11 @@ Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 call plug#end()
 
 colorscheme onedark
+hi Normal guibg=None ctermbg=None
+hi EndOfBuffer guibg=None ctermbg=None
+hi ColorColumn guibg=None ctermbg=None
+hi SignColumn guibg=None ctermbg=None
+hi LineNr guibg=None ctermbg=None
 
 lua << EOF
 require("configs.treesitter")
