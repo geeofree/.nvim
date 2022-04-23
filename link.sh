@@ -1,13 +1,6 @@
-#!/usr/bin/env zsh
+if [ ! -d ~/.config/nvim ];
+then
+	mkdir ~/.config/nvim
+fi
 
-rm -rf ~/.config/nvim/**/**
-mkdir -p ~/.config/nvim/plugin
-mkdir -p ~/.config/nvim/autoload
-mkdir -p ~/.config/nvim/autoload/ext
-mkdir -p ~/.config/nvim/lua
-mkdir -p ~/.config/nvim/lua/configs
-mkdir -p ~/.config/nvim/ftplugin
-
-for file in `find . -regex ".*\.vim$\|.*\.lua$"`; do
-	ln -s $PWD/$file ~/.config/nvim/$file
-done
+stow -t ~/.config/nvim --ignore='.*\.md' --ignore='.*\.sh' --ignore='\.git' .
