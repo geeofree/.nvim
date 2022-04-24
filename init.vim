@@ -1,6 +1,7 @@
 call plug#begin()
 " Theme
 Plug 'navarasu/onedark.nvim'
+Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'akinsho/bufferline.nvim'
 Plug 'karb94/neoscroll.nvim'
@@ -44,7 +45,7 @@ Plug 'numToStr/Comment.nvim'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 call plug#end()
 
-colorscheme onedark
+colorscheme kanagawa
 hi Normal guibg=None ctermbg=None
 hi EndOfBuffer guibg=None ctermbg=None
 hi ColorColumn guibg=None ctermbg=None
