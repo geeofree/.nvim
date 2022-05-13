@@ -19,6 +19,8 @@ nnoremap <leader>q :bdelete<cr>
 nnoremap <leader>qq :bdelete!<cr>
 nnoremap <leader>e :write<cr><bar>:bdelete<cr>
 nnoremap <leader>cd :lcd %:p:h<cr>
+nnoremap <leader>bb :BufferLinePick<cr>
+nnoremap <leader>bc :BufferLinePickClose<cr>
 
 " Git
 nnoremap <leader>gg :G<cr>
@@ -33,6 +35,8 @@ nnoremap ]c :Gitsigns next_hunk<cr>
 " Quickfix
 nnoremap <leader>, :cprevious<cr>
 nnoremap <leader>. :cnext<cr>
+nnoremap <leader>co :copen<cr>
+nnoremap <leader>cc :cclose<cr>
 
 " Terminal Emulator
 tnoremap <Esc> <C-\><C-n>
