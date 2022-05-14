@@ -40,4 +40,8 @@ nnoremap <leader>cc :cclose<cr>
 
 " Terminal Emulator
 tnoremap <Esc> <C-\><C-n>
-nnoremap <leader>t :split<cr>:te<cr>
+nnoremap <leader>tt :FloatermToggle<cr>
+nnoremap <leader>tn :FloatermNew<cr>
+nnoremap <leader>tq :FloatermKill<cr>
+nnoremap <leader>tqq :FloatermKill!<cr>
+nnoremap <leader>tf :Floaterms<cr>

@@ -43,6 +43,11 @@ Plug 'roginfarrer/vim-dirvish-dovish', {'branch': 'main'}
 " Line Commenting
 Plug 'numToStr/Comment.nvim'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+
+" Float term
+Plug 'voldikss/vim-floaterm'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'voldikss/fzf-floaterm'
 call plug#end()
 
 colorscheme kanagawa
