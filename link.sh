@@ -1,6 +1,6 @@
 if [ ! -d ~/.config/nvim ];
 then
-	mkdir ~/.config/nvim
+	mkdir -p ~/.config/nvim
 fi
 
 stow -v -t ~/.config/nvim --ignore='.*\.md' --ignore='.*\.sh' --ignore='\.git' .
