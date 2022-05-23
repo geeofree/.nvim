@@ -13,6 +13,8 @@ local servers = {
 	'sumneko_lua',
 	'rust_analyzer',
 	'taplo',
+	'yamlls',
+	'ansiblels',
 }
 
 for _, name in pairs(servers) do
