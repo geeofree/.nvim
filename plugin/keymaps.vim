@@ -18,7 +18,7 @@ nnoremap <leader>w :write<cr>
 nnoremap <leader>q :bdelete<cr>
 nnoremap <leader>qq :bdelete!<cr>
 nnoremap <leader>e :write<cr><bar>:bdelete<cr>
-nnoremap <leader>cd :lcd %:p:h<cr>
+nnoremap <leader>cd :cd %:p:h<cr>
 nnoremap <leader>bb :BufferLinePick<cr>
 nnoremap <leader>bc :BufferLinePickClose<cr>
 
