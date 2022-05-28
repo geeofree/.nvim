@@ -6,6 +6,7 @@ nnoremap <leader>fss <cmd>Telescope live_grep<cr>
 nnoremap <leader>fw <cmd>Telescope grep_string<cr>
 nnoremap <leader>fg <cmd>Telescope git_status<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fd <cmd>lua require('configs.telescope').search_dirs(require('telescope.themes').get_dropdown())<cr>
 nnoremap <leader>ev <cmd>lua require('configs.telescope').search_nvim()<cr>
 nnoremap <leader>en <cmd>lua require('configs.telescope').search_notes()<cr>
 nnoremap <leader>ed <cmd>lua require('configs.telescope').search_dotfiles()<cr>
@@ -18,7 +19,8 @@ nnoremap <leader>w :write<cr>
 nnoremap <leader>q :bdelete<cr>
 nnoremap <leader>qq :bdelete!<cr>
 nnoremap <leader>e :write<cr><bar>:bdelete<cr>
-nnoremap <leader>cd :cd %:p:h<cr>
+nnoremap <leader>cd <cmd>lua require('configs.utils').change_dir()<cr>
+nnoremap <leader>jd :Dirvish<cr>
 nnoremap <leader>bb :BufferLinePick<cr>
 nnoremap <leader>bc :BufferLinePickClose<cr>
 
