@@ -51,6 +51,7 @@ local pickers = require("telescope.pickers")
 local finders = require("telescope.finders")
 local config = require("telescope.config").values
 local globals = require("configs.globals")
+local helpers = require("configs.helpers")
 
 local M = {}
 
@@ -75,7 +76,7 @@ M.search_dotfiles = function()
 	})
 end
 
-M.search_dirs = function (opts)
+M.search_work_dirs = function (opts)
 	opts = opts or {}
 	pickers.new(opts, {
 		prompt_title = "Working Directories",
@@ -90,6 +91,27 @@ M.search_dirs = function (opts)
 				local value = selection[1]
 				vim.api.nvim_command(':Dirvish ' .. value)
 				vim.api.nvim_command(':cd %:p:h')
+			end)
+			return true
+		end,
+	}):find()
+end
+
+M.search_marked_buffers = function (opts)
+	opts = opts or {}
+	pickers.new(opts, {
+		prompt_title = "Marked Buffers",
+		finder = finders.new_table {
+			results = globals.marked_buffers
+		},
+		sorter = config.generic_sorter(opts),
+		attach_mappings = function (_, map)
+			map("i", "<c-d>", function()
+				local selection = action_state.get_selected_entry()
+				local found_marked_buffer = helpers.contains(globals.marked_buffers, selection[1])
+				if found_marked_buffer ~= false then
+					table.remove(globals.marked_buffers, found_marked_buffer)
+				end
 			end)
 			return true
 		end,
