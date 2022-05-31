@@ -48,6 +48,9 @@ Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'voldikss/fzf-floaterm'
+
+" Notes
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 colorscheme kanagawa
