@@ -84,13 +84,20 @@ M.search_work_dirs = function (opts)
 			results = globals.paths
 		},
 		sorter = config.generic_sorter(opts),
-		attach_mappings = function (prompt_bufnr)
+		attach_mappings = function (prompt_bufnr, map)
 			actions.select_default:replace(function ()
 				actions.close(prompt_bufnr)
 				local selection = action_state.get_selected_entry()
 				local value = selection[1]
 				vim.api.nvim_command(':Dirvish ' .. value)
 				vim.api.nvim_command(':cd %:p:h')
+			end)
+			map("i", "<c-d>", function()
+				local selection = action_state.get_selected_entry()
+				local found_work_dir = helpers.contains(globals.paths, selection[1])
+				if found_work_dir ~= false then
+					table.remove(globals.paths, found_work_dir)
+				end
 			end)
 			return true
 		end,
