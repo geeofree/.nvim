@@ -51,7 +51,6 @@ Plug 'voldikss/fzf-floaterm'
 
 " Notes
 Plug 'vimwiki/vimwiki'
-Plug 'vim-scripts/calendar.vim--Matsumoto'
 call plug#end()
 
 colorscheme kanagawa

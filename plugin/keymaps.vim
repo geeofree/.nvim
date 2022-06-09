@@ -50,16 +50,3 @@ nnoremap <leader>tn :FloatermNew<cr>
 nnoremap <leader>tq :FloatermKill<cr>
 nnoremap <leader>tqq :FloatermKill!<cr>
 nnoremap <leader>tf :Floaterms<cr>
-
-" Calendar
-nnoremap <leader>cad :CalendarH<cr>
-
-" Vimwiki
-nmap <leader>vw <Plug>VimwikiIndex
-nmap <leader>vt <Plug>VimwikiTabIndex
-nmap <leader>vs <Plug>VikwikiUISelect
-nmap <leader>vi <Plug>VimwikiDiaryIndex
-nmap <leader>v<leader>v <Plug>VimwikiMakeDiaryNote
-nmap <leader>v<leader>t <Plug>VimwikiTabMakeDiaryNote
-nmap <leader>v<leader>y <Plug>VimwikiMakeYesterdayDiaryNote
-nmap <leader>v<leader>m <Plug>VimwikiMakeTomorrowDiaryNote
