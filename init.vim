@@ -51,6 +51,9 @@ Plug 'voldikss/fzf-floaterm'
 
 " Notes
 Plug 'vimwiki/vimwiki'
+
+" Navigation
+Plug 'tpope/vim-unimpaired'
 call plug#end()
 
 colorscheme kanagawa
