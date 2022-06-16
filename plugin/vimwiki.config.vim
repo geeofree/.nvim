@@ -9,12 +9,15 @@ let personal_notes.path = '~/Sync/notes/personal'
 let personal_notes.syntax = 'markdown'
 let personal_notes.ext = '.md'
 
-let todo_notes = {}
-let todo_notes.path = '~/Sync/notes/todo'
-let todo_notes.syntax = 'markdown'
-let todo_notes.ext = '.md'
+let linux_notes = {}
+let linux_notes.path = '~/Sync/notes/linux'
+let linux_notes.syntax = 'markdown'
+let linux_notes.ext = '.md'
 
-let g:vimwiki_list = [root_notes, personal_notes, todo_notes]
+let g:vimwiki_list = []
+call add(vimwiki_list, root_notes)
+call add(vimwiki_list, personal_notes)
+call add(vimwiki_list, linux_notes)
 
 let g:vimwiki_key_mappings = {}
 let g:vimwiki_key_mappings.headers = 0
