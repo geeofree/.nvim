@@ -13,18 +13,25 @@ nnoremap <leader>ev <cmd>lua require('configs.telescope').search_nvim()<cr>
 nnoremap <leader>ed <cmd>lua require('configs.telescope').search_dotfiles()<cr>
 
 " Buffer
-nnoremap [b :bprev<cr>
-nnoremap ]b :bnext<cr>
 nnoremap <leader>w :write<cr>
 nnoremap <leader>q :bdelete<cr>
 nnoremap <leader>qq :bdelete!<cr>
 nnoremap <leader>e :write<cr><bar>:bdelete<cr>
 nnoremap <leader>cd <cmd>lua require('configs.utils').change_dir()<cr>
-nnoremap <leader>mm <cmd>lua require('configs.utils').mark_buffer()<cr>
+nnoremap <leader>mb <cmd>lua require('configs.utils').mark_buffer()<cr>
 nnoremap <leader>mc <cmd>lua require('configs.utils').clear_marked_buffers()<cr>
 nnoremap <leader>jd :Dirvish<cr>
-nnoremap <leader>bb :BufferLinePick<cr>
-nnoremap <leader>bc :BufferLinePickClose<cr>
+nnoremap <leader>bq :bufdo :bdelete<cr>
+nnoremap <leader>bqq :bufdo :bdelete!<cr>
+nnoremap <silent><leader>1 <Cmd>BufferLineGoToBuffer 1<CR>
+nnoremap <silent><leader>2 <Cmd>BufferLineGoToBuffer 2<CR>
+nnoremap <silent><leader>3 <Cmd>BufferLineGoToBuffer 3<CR>
+nnoremap <silent><leader>4 <Cmd>BufferLineGoToBuffer 4<CR>
+nnoremap <silent><leader>5 <Cmd>BufferLineGoToBuffer 5<CR>
+nnoremap <silent><leader>6 <Cmd>BufferLineGoToBuffer 6<CR>
+nnoremap <silent><leader>7 <Cmd>BufferLineGoToBuffer 7<CR>
+nnoremap <silent><leader>8 <Cmd>BufferLineGoToBuffer 8<CR>
+nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
 
 " Git
 nnoremap <leader>gg :G<cr>

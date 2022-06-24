@@ -73,7 +73,7 @@ require("configs.telescope")
 require("configs.devicons")
 require("configs.lualine")
 require("configs.comment")
-require("bufferline").setup{}
+require("configs.bufferline")
 require('neoscroll').setup()
 require('gitsigns').setup()
 EOF
