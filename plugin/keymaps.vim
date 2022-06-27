@@ -21,6 +21,7 @@ nnoremap <leader>cd <cmd>lua require('configs.utils').change_dir()<cr>
 nnoremap <leader>mb <cmd>lua require('configs.utils').mark_buffer()<cr>
 nnoremap <leader>mc <cmd>lua require('configs.utils').clear_marked_buffers()<cr>
 nnoremap <leader>jd :Dirvish<cr>
+nnoremap <leader>bu :bufdo :update<cr>
 nnoremap <leader>bq :bufdo :bdelete<cr>
 nnoremap <leader>bqq :bufdo :bdelete!<cr>
 nnoremap <silent><leader>1 <Cmd>BufferLineGoToBuffer 1<CR>
