@@ -27,4 +27,24 @@ M.clear_marked_buffers = function ()
 	print("Marked buffers cleared!")
 end
 
+local function go_to_path(path)
+	vim.api.nvim_command('Dirvish ' .. path)
+	M.change_dir()
+end
+
+M.go_to_playground = function ()
+	local playground_path = '/tmp/playground'
+	local playground_exists = helpers.path_exists(playground_path)
+	if playground_exists then
+		go_to_path(playground_path)
+	else
+		local created, exit_code = os.execute("mkdir " .. playground_path)
+		if created then
+			go_to_path(playground_path)
+		else
+			print("Could not create playground path: ", exit_code)
+		end
+	end
+end
+
 return M
