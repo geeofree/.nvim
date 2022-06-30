@@ -17,11 +17,8 @@ nnoremap <leader>w :write<cr>
 nnoremap <leader>q :bdelete<cr>
 nnoremap <leader>qq :bdelete!<cr>
 nnoremap <leader>e :write<cr><bar>:bdelete<cr>
-nnoremap <leader>cd <cmd>lua require('configs.utils').change_dir()<cr>
 nnoremap <leader>mb <cmd>lua require('configs.utils').mark_buffer()<cr>
 nnoremap <leader>mc <cmd>lua require('configs.utils').clear_marked_buffers()<cr>
-nnoremap <leader>jd :Dirvish<cr>
-nnoremap <leader>jp <cmd>lua require('configs.utils').go_to_playground()<cr>
 nnoremap <leader>bu :bufdo :update<cr>
 nnoremap <leader>bq :bufdo :bdelete<cr>
 nnoremap <leader>bqq :bufdo :bdelete!<cr>
@@ -34,6 +31,13 @@ nnoremap <silent><leader>6 <Cmd>BufferLineGoToBuffer 6<CR>
 nnoremap <silent><leader>7 <Cmd>BufferLineGoToBuffer 7<CR>
 nnoremap <silent><leader>8 <Cmd>BufferLineGoToBuffer 8<CR>
 nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
+
+" Directory Navigation
+nnoremap <leader>dd :Dirvish<cr>
+nnoremap <leader>dc <cmd>lua require('configs.utils').go_to_path('~/Projects/.dotfiles')<cr>
+nnoremap <leader>dn <cmd>lua require('configs.utils').go_to_path('~/Projects/.nvim')<cr>
+nnoremap <leader>dp <cmd>lua require('configs.utils').go_to_playground()<cr>
+nnoremap <leader>cd <cmd>lua require('configs.utils').change_dir()<cr>
 
 " Git
 nnoremap <leader>gg :G<cr>
