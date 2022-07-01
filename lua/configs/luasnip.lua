@@ -13,7 +13,19 @@ ls.add_snippets("javascript", {
 	ls.parser.parse_snippet("im", "import $1 from '$2'"),
 })
 
+ls.add_snippets("javascriptreact", {
+	ls.parser.parse_snippet("fn", "function $1($2) {\n\t$3\n}"),
+	ls.parser.parse_snippet("afn", "async function $1($2) {\n\t$3\n}"),
+	ls.parser.parse_snippet("im", "import $1 from '$2'"),
+})
+
 ls.add_snippets("typescript", {
+	ls.parser.parse_snippet("fn", "function $1($2)$3 {\n\t$4\n}"),
+	ls.parser.parse_snippet("afn", "async function $1($2)$3 {\n\t$4\n}"),
+	ls.parser.parse_snippet("im", "import $1 from '$2'"),
+})
+
+ls.add_snippets("typescriptreact", {
 	ls.parser.parse_snippet("fn", "function $1($2)$3 {\n\t$4\n}"),
 	ls.parser.parse_snippet("afn", "async function $1($2)$3 {\n\t$4\n}"),
 	ls.parser.parse_snippet("im", "import $1 from '$2'"),
