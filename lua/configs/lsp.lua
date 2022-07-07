@@ -12,9 +12,7 @@ local servers = {
 	'bashls',
 	'sumneko_lua',
 	'rust_analyzer',
-	'taplo',
 	'yamlls',
-	'ansiblels',
 }
 
 for _, name in pairs(servers) do
@@ -63,12 +61,24 @@ lsp_installer.on_server_ready(function(server)
 		on_attach = on_attach,
 		root_dir = vim.loop.cwd, -- add this option so that we always attach to the client
 		autostart = true,
-		settings = {
+	}
+
+	if string.find(server.name, "lua") then
+		opts.settings = {
 			Lua = {
 				diagnostics = { globals = {'vim'} }
 			},
-		},
-	}
+		}
+	end
+
+	if string.find(server.name, "eslint") then
+		opts.settings = {
+			["eslint.options"] = {
+				rulePaths = { ".eslintrules" }
+			}
+		}
+		print(opts.settings["eslint.options"].rulePaths[0])
+	end
 
 	server:setup(opts)
 end)

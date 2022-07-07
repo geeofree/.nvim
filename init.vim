@@ -19,6 +19,7 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'svermeulen/vimpeccable'
+Plug 'mfussenegger/nvim-lint'
 
 " Fuzzy Finder
 Plug 'nvim-lua/plenary.nvim'
@@ -74,6 +75,7 @@ require("configs.devicons")
 require("configs.lualine")
 require("configs.comment")
 require("configs.bufferline")
+require("configs.lint")
 require('neoscroll').setup()
 require('gitsigns').setup()
 EOF
