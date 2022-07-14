@@ -11,6 +11,16 @@ M.change_dir = function ()
 	end
 end
 
+M.go_to_path = function (path)
+	vim.api.nvim_command('Dirvish ' .. path)
+	M.change_dir()
+end
+
+M.go_to_root = function ()
+	local path = vim.api.nvim_exec('pwd', true)
+	vim.api.nvim_command('Dirvish ' .. path)
+end
+
 M.mark_buffer = function ()
 	local file = vim.api.nvim_exec("echo expand('%:t')", true)
 	if file ~= '' then
@@ -25,11 +35,6 @@ end
 M.clear_marked_buffers = function ()
 	globals.marked_buffers = {}
 	print("Marked buffers cleared!")
-end
-
-M.go_to_path = function (path)
-	vim.api.nvim_command('Dirvish ' .. path)
-	M.change_dir()
 end
 
 M.go_to_playground = function ()
