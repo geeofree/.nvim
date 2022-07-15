@@ -41,17 +41,17 @@ nnoremap <leader>cd <cmd>lua require('configs.utils').change_dir()<cr>
 
 " Git
 nnoremap <leader>gg :G<cr>
+nnoremap <leader>ga :G aa<cr>
 nnoremap <leader>gc :G cm<cr>
 nnoremap <leader>gl :G log<cr>
 nnoremap <leader>gp :G ps<cr>
 nnoremap <leader>gd :Gvdiffsplit<cr>
-nnoremap <leader>gph :Gitsigns preview_hunk<cr>
+nnoremap <leader>ph :Gitsigns preview_hunk<cr>
+nnoremap <leader>rh :Gitsigns reset_hunk<cr>
 nnoremap [c :Gitsigns prev_hunk<cr>
 nnoremap ]c :Gitsigns next_hunk<cr>
 
 " Quickfix
-nnoremap [q :cprevious<cr>
-nnoremap ]q :cnext<cr>
 nnoremap <leader>co :copen<cr>
 nnoremap <leader>cc :cclose<cr>
 
