@@ -6,7 +6,7 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'akinsho/bufferline.nvim'
 Plug 'karb94/neoscroll.nvim'
 
-" Intellisense
+" Intellisense + Syntax Highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
@@ -20,6 +20,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'svermeulen/vimpeccable'
 Plug 'mfussenegger/nvim-lint'
+Plug 'elkowar/yuck.vim'
 
 " Fuzzy Finder
 Plug 'nvim-lua/plenary.nvim'
