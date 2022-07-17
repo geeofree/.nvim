@@ -22,6 +22,7 @@ nnoremap <leader>mc <cmd>lua require('configs.utils').clear_marked_buffers()<cr>
 nnoremap <leader>bu :bufdo :update<cr>
 nnoremap <leader>bq :bufdo :bdelete<cr>
 nnoremap <leader>bqq :bufdo :bdelete!<cr>
+nnoremap <leader>bb :BufferLinePickClose<cr>
 nnoremap <silent><leader>1 <Cmd>BufferLineGoToBuffer 1<CR>
 nnoremap <silent><leader>2 <Cmd>BufferLineGoToBuffer 2<CR>
 nnoremap <silent><leader>3 <Cmd>BufferLineGoToBuffer 3<CR>
