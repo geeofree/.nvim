@@ -62,6 +62,7 @@ hi ColorColumn guibg=None ctermbg=None
 hi SignColumn guibg=None ctermbg=None
 hi LineNr guibg=None ctermbg=None
 hi WinSeparator guibg=None ctermbg=None
+hi TelescopeBorder guibg=None ctermbg=None
 
 lua << EOF
 require("configs.treesitter")
