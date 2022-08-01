@@ -67,7 +67,7 @@ lsp_installer.on_server_ready(function(server)
 	if string.find(server.name, "lua") then
 		opts.settings = {
 			Lua = {
-				diagnostics = { globals = {'vim'} }
+				diagnostics = { globals = {'vim', 'I', 'F'} }
 			},
 		}
 	end
