@@ -5,6 +5,7 @@ Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'akinsho/bufferline.nvim'
 Plug 'karb94/neoscroll.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 
 " Intellisense + Syntax Highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -19,7 +20,6 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'svermeulen/vimpeccable'
-Plug 'mfussenegger/nvim-lint'
 Plug 'elkowar/yuck.vim'
 
 " Fuzzy Finder
@@ -29,9 +29,6 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " Emmet
 Plug 'mattn/emmet-vim'
-
-" Devicons
-Plug 'kyazdani42/nvim-web-devicons'
 
 " Git Integration
 Plug 'tpope/vim-fugitive'
@@ -76,7 +73,6 @@ require("configs.devicons")
 require("configs.lualine")
 require("configs.comment")
 require("configs.bufferline")
-require("configs.lint")
 require('neoscroll').setup()
 require('gitsigns').setup()
 EOF

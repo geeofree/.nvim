@@ -1,11 +1,4 @@
-local function includes(table, string)
-	for _, value in ipairs(table) do
-		if value == string then
-			return true
-		end
-	end
-	return false
-end
+local helpers = require("configs.helpers")
 
 require('Comment').setup({
     pre_hook = function(ctx)
@@ -13,7 +6,7 @@ require('Comment').setup({
 			'javascript', 'javascriptreact', 'javascript.jsx',
 			'typescript', 'typescriptreact', 'typescript.tsx',
 		}
-		if includes(js_files, vim.bo.filetype) then
+		if helpers.contains(js_files, vim.bo.filetype) then
 			local U = require('Comment.utils')
 
 			-- Detemine whether to use linewise or blockwise commentstring
