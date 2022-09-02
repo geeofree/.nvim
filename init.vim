@@ -53,6 +53,7 @@ Plug 'vimwiki/vimwiki'
 
 " Navigation
 Plug 'tpope/vim-unimpaired'
+Plug 'wellle/context.vim'
 call plug#end()
 
 colorscheme kanagawa
