@@ -69,8 +69,6 @@ hi TelescopeBorder guibg=None ctermbg=None
 lua << EOF
 require('neoscroll').setup()
 require('gitsigns').setup()
-require('mason').setup()
-require("mason-lspconfig").setup()
 require("configs.treesitter")
 require("configs.lsp")
 require("configs.cmp")
