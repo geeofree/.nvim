@@ -9,6 +9,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 " Intellisense + Syntax Highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
@@ -54,7 +55,6 @@ Plug 'vimwiki/vimwiki'
 
 " Navigation
 Plug 'tpope/vim-unimpaired'
-Plug 'wellle/context.vim'
 call plug#end()
 
 colorscheme kanagawa
