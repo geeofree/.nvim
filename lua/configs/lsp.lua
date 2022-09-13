@@ -7,7 +7,6 @@ local servers = {
   'cssls',
   'cssmodules_ls',
   'dockerls',
-  'html',
   'intelephense',
   'jsonls',
   'quick_lint_js',
