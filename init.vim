@@ -10,8 +10,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 " Intellisense + Syntax Highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-context'
-Plug 'williamboman/mason.nvim'
-Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'williamboman/nvim-lsp-installer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -70,8 +69,8 @@ lua << EOF
 require('neoscroll').setup()
 require('gitsigns').setup()
 require("configs.treesitter")
-require("configs.lsp")
 require("configs.cmp")
+require("configs.lsp")
 require("configs.luasnip")
 require("configs.telescope")
 require("configs.devicons")

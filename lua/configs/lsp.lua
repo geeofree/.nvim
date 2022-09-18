@@ -2,11 +2,11 @@ local lspconfig = require('lspconfig')
 
 local servers = {
   'angularls',
-  'ansiblels',
   'bashls',
   'cssls',
   'cssmodules_ls',
   'dockerls',
+  'html',
   'intelephense',
   'jsonls',
   'quick_lint_js',
@@ -18,8 +18,7 @@ local servers = {
   'yamlls',
 }
 
-require('mason').setup({})
-require('mason-lspconfig').setup({ ensure_installed = servers })
+require('nvim-lsp-installer').setup({ ensure_installed = servers })
 
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 local keyopts = { noremap=true, silent=true }
