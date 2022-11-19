@@ -16,6 +16,7 @@ local servers = {
   'tsserver',
   'vimls',
   'yamlls',
+  'clangd',
 }
 
 require('nvim-lsp-installer').setup({ ensure_installed = servers })
