@@ -34,6 +34,7 @@ nnoremap <silent><leader>8 <Cmd>BufferLineGoToBuffer 8<CR>
 nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
 
 " Directory Navigation
+nnoremap - :Ex<cr>
 nnoremap <leader>dd <cmd>lua require('configs.utils').go_to_root()<cr>
 nnoremap <leader>dc <cmd>lua require('configs.utils').go_to_path('~/Projects/.dotfiles')<cr>
 nnoremap <leader>dn <cmd>lua require('configs.utils').go_to_path('~/Projects/.nvim')<cr>

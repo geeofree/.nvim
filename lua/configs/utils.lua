@@ -12,13 +12,13 @@ M.change_dir = function ()
 end
 
 M.go_to_path = function (path)
-	vim.api.nvim_command('Dirvish ' .. path)
+	vim.api.nvim_command('Ex ' .. path)
 	M.change_dir()
 end
 
 M.go_to_root = function ()
 	local path = vim.api.nvim_exec('pwd', true)
-	vim.api.nvim_command('Dirvish ' .. path)
+	vim.api.nvim_command('Ex ' .. path)
 end
 
 M.mark_buffer = function ()

@@ -89,7 +89,7 @@ M.search_work_dirs = function (opts)
 				actions.close(prompt_bufnr)
 				local selection = action_state.get_selected_entry()
 				local value = selection[1]
-				vim.api.nvim_command(':Dirvish ' .. value)
+				vim.api.nvim_command(':Ex ' .. value)
 				vim.api.nvim_command(':cd %:p:h')
 			end)
 			map("i", "<c-d>", function()
