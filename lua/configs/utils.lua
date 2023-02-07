@@ -3,8 +3,9 @@ local helpers = require("configs.helpers")
 
 local M = {}
 
-M.change_dir = function ()
-	vim.api.nvim_command(':cd %:p:h')
+M.change_dir = function (path)
+  if not path then path = vim.api.nvim_exec("echo expand('%:p:h')", true) end
+	vim.api.nvim_command(':cd ' .. path)
 	local new_path = vim.api.nvim_exec('pwd', true)
 	if not helpers.contains(globals.paths, new_path) then
 		table.insert(globals.paths, new_path)
@@ -13,7 +14,7 @@ end
 
 M.go_to_path = function (path)
 	vim.api.nvim_command('Ex ' .. path)
-	M.change_dir()
+	M.change_dir(path)
 end
 
 M.go_to_root = function ()
