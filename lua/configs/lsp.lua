@@ -11,7 +11,7 @@ local servers = {
   'jsonls',
   'quick_lint_js',
   'rust_analyzer',
-  'sumneko_lua',
+  'lua_ls',
   'tailwindcss',
   'tsserver',
   'vimls',
@@ -49,7 +49,7 @@ for _, server in pairs(servers) do
     capabilities = capabilities,
   }
 
-  if server == 'sumneko_lua' then
+  if server == 'lua_ls' then
     server_config = vim.tbl_extend('keep', server_config, {
       settings = {
         Lua = {
