@@ -58,7 +58,7 @@ nnoremap <leader>co :copen<cr>
 nnoremap <leader>cc :cclose<cr>
 
 " Terminal Emulator
-tnoremap <Esc> <C-\><C-n>
+tnoremap <C-\><C-\> <C-\><C-n>
 nnoremap <leader>tt :FloatermToggle<cr>
 nnoremap <leader>tn :FloatermNew<cr>
 nnoremap <leader>tq :FloatermKill<cr>
