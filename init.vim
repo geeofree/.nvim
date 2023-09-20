@@ -72,4 +72,7 @@ require("configs.devicons")
 require("configs.lualine")
 require("configs.comment")
 require("configs.bufferline")
+require("treesitter-context").setup({
+  multiline_threshold = 1,
+})
 EOF
