@@ -13,6 +13,8 @@ Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'MunifTanjim/prettier.nvim'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
@@ -61,8 +63,10 @@ hi WinSeparator guibg=None ctermbg=None
 hi TelescopeBorder guibg=None ctermbg=None
 
 lua << EOF
+require('prettier').setup()
 require('neoscroll').setup()
 require('gitsigns').setup()
+require("configs.prettier")
 require("configs.treesitter")
 require("configs.cmp")
 require("configs.lsp")
