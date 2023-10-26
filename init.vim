@@ -3,7 +3,6 @@ call plug#begin()
 Plug 'navarasu/onedark.nvim'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'akinsho/bufferline.nvim'
 Plug 'karb94/neoscroll.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
@@ -75,7 +74,6 @@ require("configs.telescope")
 require("configs.devicons")
 require("configs.lualine")
 require("configs.comment")
-require("configs.bufferline")
 require("treesitter-context").setup({
   multiline_threshold = 1,
 })
