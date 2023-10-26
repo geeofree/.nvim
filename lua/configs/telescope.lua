@@ -1,6 +1,6 @@
 require('telescope').setup{
 	defaults = {
-		file_ignore_patterns = { "%.git" },
+		file_ignore_patterns = { "%.git", "node_modules", "%-lock.json" },
 		mappings = {
 			i = {
 				["<c-k>"] = require('telescope.actions').move_selection_previous,
@@ -25,7 +25,7 @@ require('telescope').setup{
   pickers = {
 		find_files = {
 			previewer = false,
-			theme = "dropdown",
+			theme = "ivy",
 		},
 		grep_string = {
 			theme = "ivy",
@@ -34,11 +34,12 @@ require('telescope').setup{
 			theme = "ivy",
 		},
 		git_status = {
+      previewer = false,
 			theme = "ivy",
 		},
-		buffer = {
+		buffers = {
 			previewer = false,
-			theme = "dropdown",
+			theme = "ivy",
 		},
   },
 	extensions = {},
