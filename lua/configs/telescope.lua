@@ -40,6 +40,11 @@ require('telescope').setup{
 		buffers = {
 			previewer = false,
 			theme = "ivy",
+      mappings = {
+        i = {
+          ["<c-d>"] = require('telescope.actions').delete_buffer
+        }
+      }
 		},
   },
 	extensions = {},
