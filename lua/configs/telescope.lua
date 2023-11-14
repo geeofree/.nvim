@@ -34,7 +34,6 @@ require('telescope').setup{
 			theme = "ivy",
 		},
 		git_status = {
-      previewer = false,
 			theme = "ivy",
 		},
 		buffers = {
