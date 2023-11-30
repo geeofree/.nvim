@@ -1,5 +1,7 @@
 local helpers = require("configs.helpers")
 
+vim.g.skip_ts_context_commentstring_module = true
+
 require('Comment').setup({
     pre_hook = function(ctx)
 		local js_files = {
