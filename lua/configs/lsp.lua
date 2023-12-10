@@ -1,16 +1,13 @@
 local lspconfig = require('lspconfig')
 
 local servers = {
-  'angularls',
   'bashls',
   'cssls',
   'cssmodules_ls',
   'dockerls',
   'html',
-  'intelephense',
   'jsonls',
   'quick_lint_js',
-  'rust_analyzer',
   'lua_ls',
   'tailwindcss',
   'tsserver',
