@@ -14,7 +14,6 @@ local servers = {
   'vimls',
   'yamlls',
   'clangd',
-  'hls',
 }
 
 require('mason').setup();
