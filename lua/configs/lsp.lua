@@ -1,6 +1,8 @@
 local lspconfig = require('lspconfig')
 
 local servers = {
+  'asm_lsp',
+  'astro',
   'bashls',
   'cssls',
   'cssmodules_ls',
@@ -10,7 +12,7 @@ local servers = {
   'quick_lint_js',
   'lua_ls',
   'tailwindcss',
-  'tsserver',
+  'ts_ls',
   'vimls',
   'yamlls',
   'clangd',
