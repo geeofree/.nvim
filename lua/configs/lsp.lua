@@ -2,6 +2,7 @@ local lspconfig = require('lspconfig')
 
 local servers = {
   'asm_lsp',
+  'volar',
   'astro',
   'bashls',
   'cssls',
@@ -59,6 +60,17 @@ for _, server in pairs(servers) do
           diagnostics = {
             globals = { 'vim' },
           },
+        },
+      },
+    })
+  end
+
+  if server == "volar" then
+    server_config = vim.tbl_extend('keep', server_config, {
+      filetypes = { 'vue' },
+      init_options = {
+        vue = {
+          hybridMode = false,
         },
       },
     })
