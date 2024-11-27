@@ -1,7 +1,6 @@
 local lspconfig = require('lspconfig')
 
 local servers = {
-  'asm_lsp',
   'volar',
   'astro',
   'bashls',
