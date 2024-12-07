@@ -51,6 +51,9 @@ Plug 'vimwiki/vimwiki'
 
 " Navigation
 Plug 'tpope/vim-unimpaired'
+
+" Smear
+Plug 'sphamba/smear-cursor.nvim'
 call plug#end()
 
 colorscheme kanagawa
@@ -75,6 +78,7 @@ require("configs.telescope")
 require("configs.devicons")
 require("configs.lualine")
 require("configs.comment")
+require("configs.smear_cursor")
 require("treesitter-context").setup({
   multiline_threshold = 1,
 })
