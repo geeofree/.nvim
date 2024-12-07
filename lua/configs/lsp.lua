@@ -12,7 +12,7 @@ local servers = {
   'quick_lint_js',
   'lua_ls',
   'tailwindcss',
-  'ts_ls',
+  'tsserver',
   'vimls',
   'yamlls',
   'clangd',
