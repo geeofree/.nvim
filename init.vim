@@ -54,6 +54,9 @@ Plug 'tpope/vim-unimpaired'
 
 " Smear
 Plug 'sphamba/smear-cursor.nvim'
+
+" Indent Line
+Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
 
 colorscheme kanagawa
@@ -79,6 +82,7 @@ require("configs.devicons")
 require("configs.lualine")
 require("configs.comment")
 require("configs.smear_cursor")
+require("configs.indent_line")
 require("treesitter-context").setup({
   multiline_threshold = 1,
 })
