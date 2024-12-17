@@ -22,7 +22,6 @@ nnoremap <leader>mc <cmd>lua require('configs.utils').clear_marked_buffers()<cr>
 nnoremap <leader>bu :bufdo :update<cr>
 nnoremap <leader>bq :bufdo :bdelete<cr>
 nnoremap <leader>bqq :bufdo :bdelete!<cr>
-nnoremap <leader>bb :BufferLinePickClose<cr>
 
 " Directory Navigation
 nnoremap <leader>- :Rex<cr>
