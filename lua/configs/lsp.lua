@@ -12,7 +12,7 @@ local servers = {
   'quick_lint_js',
   'lua_ls',
   'tailwindcss',
-  'tsserver',
+  'ts_ls',
   'vimls',
   'yamlls',
   'clangd',
@@ -43,7 +43,6 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', keyopts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', keyopts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', keyopts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', keyopts)
 end
 
 for _, server in pairs(servers) do
